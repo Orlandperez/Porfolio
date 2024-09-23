@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 255, 157, 0.918));
+}
+
+/****** Inicio del Header ******/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+header h1{
+    width: 50%;
+    text-align: center;
+    color: rgb(38, 207, 151);
+}
+header nav{
+    width: 50%;
+    height: 100%;
+}
+header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 4rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    transition: .3s;
+}
+header nav ul li a:hover{
+    color: rgb(38, 207, 151);
+}
+
+
+
+
+
+/***** INICIO DEL HOME *****/
+.home{
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home .home-info{
+    width: 35%;
+    height: 550px;
+    margin-top: 30px;
+}
+.home .home-info h1{
+    color: white;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-top: 100px;
+}
+.home .home-info span{
+    font-size: 60px;
+    color: rgb(38, 207, 151);
+    font-weight: 200;
+}
+.home .home-info .punto{
+    color: rgb(38, 207, 151);
+}
+.home .home-info a{
+    display: block;
+    color: white;
+    background-color: rgba(38, 207, 151, 0.699);
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 300px;
+    height: 55px;
+}
+.home .home-info a:hover{
+    background-color: rgba(38, 207, 151, 0.5);
+}
+
+.home .home-foto{
+    width: 22.5%;
+    border: 5px solid rgb(38, 207, 151);
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 1px rgb(38, 207, 151);
+}
+.home .home-foto img{
+    width: 415px;
+    opacity: .8;
+    border-radius: 20px;
+}
+
+
+
+/****** INICIO DEL ABOUT ******/
+.about{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));;
+}
+.about .about-titulo{
+    width: 100%;
+    height: 200px;
+    color: rgba(38, 207, 151);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about .about-titulo h1{
+    font-size: 55px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700px;
+}
+
+.about .about-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+.about .about-info .about-foto div{
+    width: 435px;
+    height: 390px;
+    border: 10px solid rgba(38, 207, 151);
+    border-radius: 20px;
+    position: relative;
+    left: 10px;
+    top: -350px;
+}
+.about .about-info .about-foto img{
+    width: 400px;
+    height: 350px;
+    position: relative;
+    border-radius: 20px;
+    z-index: 2;
+}
+.about .about-info .about-info2{
+    color: white;
+    height: 500px;
+}
+.about .about-info .about-info2 div h2 span{
+    color: rgba(38, 207, 151, 0.658);
+}
+.about .about-info .about-info2 div p{
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+.about .about-info .about-info2 div table{
+    width: 65%;
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+.about .about-info .about-info2 div table tr th{
+    color: rgba(38, 207, 151, 0.658);
+    padding: 10px 0 5px 0;
+}
+.about .about-info .about-info2 div h3{
+    text-align: center;
+    color: rgb(38, 207, 151);
+    padding-top: 10px;
+}
+.about .about-info .about-info2 div li{
+    text-align: center;
+}
+.about .about-info .about-info2 div li ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 20px;
+    transition: .2s;
+}
+.about .about-info .about-info2 div li ul a:hover{
+color: rgb(38, 207, 151);
+}
+
+
+
+/**** INICIO DE SKILLS ****/
+.skills{
+    width: 100%;
+    height: 63vh;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9));;
+}
+.skills div{
+    height: 250px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+.skills div h1{
+    font-size: 60px;
+    color: rgb(38, 207, 151);
+    margin-bottom: 5px;
+}
+.skills div p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.skills table{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+.skills table tr th{
+    color: white;
+    padding: 10px 0;
+}
+.skills table tr td img{
+    width: 120px;
+}
+.skills table tr td .js{
+    width: 50px;
+}
+.skills table tr td .css{
+    width: 70px;
+}
+
+
+
+/***** INICIO DE PROYECTS *****/
+.proyects{
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7));;
+}
+.proyects h1{
+    height: 180px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 50px;
+    color: rgb(38, 207, 151);
+}
+.proyects .proyects-caja{
+    width: 70%;
+    height: 350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    gap: 2rem;
+    justify-content: center;
+}
+.proyects .proyects-caja .proyects-info{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(21, 146, 107, 0.922);
+    text-align: center;
+}
+.proyects .proyects-caja .proyects-info div{
+    width: 280px;
+    height: 115px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.proyects .proyects-caja .proyects-info img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 190px;
+    border-radius: 20px;
+    color: white;
+}
+.proyects .proyects-caja .proyects-info h2{
+    color: rgb(38, 207, 151);
+}
+.proyects .proyects-caja .proyects-info p{
+    color: white;
+    margin: 10px 0;
+}
+.proyects .proyects-caja .proyects-info a{
+    text-decoration: none;
+    color: rgb(38, 207, 151);
+    margin-left: 15px;
+    font-size: 20px;
+    transition: .2s;
+}
+.proyects .proyects-caja .proyects-info a:hover{
+    color: rgba(38, 207, 151, 0.562);
+}
+
+
+
+/******* INICIO DEL FOOTER ******/
+footer{
+    background-color: rgba(20, 110, 80, 0.788);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .contact{
+    margin-top: 50px;
+    width: 50%;
+    height: 500px;
+}
+footer .contact form{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+footer .contact form .contact-info{
+    display: flex;
+    height: 80px;
+}
+footer .contact form .contact-info div{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+footer .contact form .contact-info div label{
+    color: white;
+}
+footer .contact form .contact-info div input{
+    width: 90%;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    padding:  0 10px;
+    outline: none;
+}
+footer .contact form .contact-info2{
+    flex-direction: column;
+    height: 100px;
+}
+footer .contact form .contact-info2 label{
+    color: white;
+}
+footer .contact form .contact-info2 input{
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    padding:  0 10px;
+    outline: none;
+}
+footer .contact form .contact-info3{
+    height: 200px;
+}
+footer .contact form .contact-info3 label{
+    color: white;
+}
+footer .contact form .contact-info3 textarea{
+    margin-top: 5px;
+    height: 80%;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    outline: none;
+}
+footer .contact form .contact-boton{
+    width: 100%;
+    text-align: center;
+}
+footer .contact form .contact-boton button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    transition: .2s;
+    font-size: 17px;
+}
+footer .contact form .contact-boton button:hover{
+    background-color: rgba(1, 8, 6, 0.514);
+    color: white;
+}
