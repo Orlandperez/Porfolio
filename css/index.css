@@ -30,6 +30,9 @@ header nav{
     width: 50%;
     height: 100%;
 }
+header nav i{
+    display: none;
+}
 header nav ul{
     width: 100%;
     height: 100%;
@@ -68,7 +71,7 @@ header nav ul li a:hover{
 }
 .home .home-info h1{
     color: white;
-    font-size: 60px;
+    font-size: 55px;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     margin-top: 100px;
@@ -105,7 +108,7 @@ header nav ul li a:hover{
     box-shadow: 1px 1px 4px 1px rgb(38, 207, 151);
 }
 .home .home-foto img{
-    width: 415px;
+    width: 100%;
     opacity: .8;
     border-radius: 20px;
 }
@@ -314,6 +317,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 footer .contact{
     margin-top: 50px;
@@ -346,6 +350,7 @@ footer .contact form .contact-info div input{
     border: none;
     padding:  0 10px;
     outline: none;
+    font-family: sans-serif;
 }
 footer .contact form .contact-info2{
     flex-direction: column;
@@ -362,6 +367,7 @@ footer .contact form .contact-info2 input{
     border: none;
     padding:  0 10px;
     outline: none;
+    font-family: sans-serif;
 }
 footer .contact form .contact-info3{
     height: 200px;
@@ -377,6 +383,7 @@ footer .contact form .contact-info3 textarea{
     border-radius: 20px;
     padding: 20px;
     outline: none;
+    font-family: sans-serif;
 }
 footer .contact form .contact-boton{
     width: 100%;
@@ -393,4 +400,185 @@ footer .contact form .contact-boton button{
 footer .contact form .contact-boton button:hover{
     background-color: rgba(1, 8, 6, 0.514);
     color: white;
+}
+
+
+
+
+/***** INICIO DEL RESPONSIVE *****/
+@media(max-width: 1610px){
+    /* HEADER */
+    header{
+        justify-content: space-evenly;
+    }
+    header h1{
+        width: 30%;
+        font-size: 25px;
+    }
+    header nav ul li a{
+        font-size: 16px;
+    }
+
+    /* HOME */
+    .home .home-info h1{
+        margin-top: 145px;
+        font-size: 40px;
+    }
+    .home .home-info h1 span{
+        font-size: 40px;
+    }
+    .home .home-info a{
+        font-size: 15px;
+        width: 230px;
+        height: 45px;
+    }
+
+    /* ABOUT */
+    .about .about-titulo h1{
+        font-size: 40px;
+
+    }
+    .about .about-info .about-foto img{
+        width: 320px;
+        height: 320px;
+    }
+    .about .about-info .about-foto div{
+        width: 340px;
+        height: 325px;
+        top: -300px;
+    }
+    .about .about-info .about-info2 div h2{
+        font-size: 20px;
+    }
+    .about .about-info .about-info2 div p{
+        font-size: 12px;
+    }
+
+    /* SKILLS */
+    .skills{
+        height: 68vh;
+    }
+    .skills div h1{
+        font-size: 40px;
+    }
+    .skills div p{
+        font-size: 15px;
+    }
+    .skills table tr th{
+        font-size: 12px;
+    }
+
+    /* PROYECTS */
+    .proyects .proyects-caja{
+        width: 90%;
+        height: 280px;
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+}
+
+@media(max-width: 1105px){
+    /* header */
+    header{
+        justify-content: none;
+    }
+    header nav{
+        width: 60%;
+    }
+    /* HOME */
+    .home .home-info{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .home .home-foto{
+        display: none;
+    }
+    /* ABOUT */
+    .about .about-foto{
+        display: none;
+    }
+    /* PROYECTS */
+    .proyects{
+        height: 110vh;
+    }
+    .proyects .proyects-caja{
+        height: 550px;
+    }
+}
+
+
+@media(max-width: 916px){
+    /* HEADER */
+    header nav ul{
+        position: fixed;
+        display: inline-block;       
+        line-height: 35px;
+        margin-right: -100%;
+        width: 40%;
+        height: 40vh;
+        top: 75px;
+        right: 0px;
+        background-color: rgba(24, 24, 24, 0.753);
+        transition: all .2s;
+    }
+    header nav ul li{
+        margin-top: 5px;
+        text-align: center;
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav i{
+        display: block;
+        color: rgb(38, 207, 151);
+        font-size: 30px;
+    }
+
+    header nav ul.mobile-menu{
+        margin-right: 0;
+        transition: all .7s;
+    }
+    /* HOME */
+    .home{
+        height: 90vh;
+    }
+    .home .home-info{
+        width: 80%;
+    }
+    .home .home-info h1{
+        font-size: 25px;
+    }
+    .home .home-info h1 span{
+        font-size: 25px;
+    }
+    /* ABOUT */
+    .about{
+        padding: 0 20px;
+        height: 110vh;
+    }
+    .about .about-info .about-info2 div table{
+        width: 100%;
+    }
+    .about .about-info .about-info2 div table tr td{
+        font-size: 13px;
+    }
+    /* SKILLS */
+    .skills{
+        height: 80vh;
+        padding: 0 20px;
+    }
+    /* PROYECTS */
+    .proyects{
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    .proyects .proyects-caja{
+        height: 100%;
+    }
+    /* FOOTER */
+    footer .contact{
+        width: 100%;
+        height: 100%;
+    }
 }
