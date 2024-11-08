@@ -535,8 +535,9 @@ footer .contact form .contact-boton button:hover{
     }
     header nav{
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
+        width: 44%;
     }
     header nav i{
         display: block;
