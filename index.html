@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Wed</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estrellas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- INICIO DEL HEADER -->
+     <header>
+        <h1>Porfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <i class="bi bi-list"></i>
+        </nav>
+     </header>
+
+    <!-- INICIO DEL MAIN  -->
+
+      <main>
+
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home-info">
+                <h1><span>ORLANDO PEREZ</span><br>DESARROLLADOR <br>FRONTEND JUNIOR<samp class="punto">.</samp></h1>
+                <a href="#">Ver CV</a>
+            </div>
+            <div class="home-foto">
+                <img src="img/compu.jpg" alt="computadora">
+            </div>
+
+            <!-- ESTRELLAS -->
+            <div class="fondo">
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span> 
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+                <span class="estrellas"></span>
+            </div> 
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="about-titulo">
+                <h1>Sobre Mi</h1>
+            </div>
+            <div class="about-info">
+                <div class="about-foto">
+                    <div>
+                        <img src="img/fondo4.jpg" alt="foto">
+                    </div>
+                </div>
+                <div class="about-info2">
+                    <div>
+                        <h2>Mi nombre es <span>Orlando Perez</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi, iusto adipisci molestias quia <br> maiores assumenda aspernatur temporibus, consequatur magnam tempore non neque similique sunt <br> elit. Debitis delectus tenetur temporibus assumenda esse tempore sapiente <br> consequatur,repudiandae praesentium minima quisquam, deserunt suscipit expedita eos.
+                        </p>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Celular</th>
+                            </tr>
+                            <tr>
+                                <td>Orlando</td>
+                                <td>1151478649</td>
+                            </tr> 
+                            <tr>
+                                <th>Pais</th>
+                                <th>Email</th>
+                            </tr>
+                            <tr>
+                                <td>Argentia</td>
+                                <td>orlandofelixperez2003@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h3>Educacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus eaque consequuntur nulla saepe culpa,<br> accusantium vitae nesciunt aliquam animi! Hic vero id tempore accusantium, molestias adipisci magnam</p>
+                        <li>
+                            <ul>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </ul>
+                        </li> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+            <div>
+                <h1>Habilidades</h1>
+                <p>Manejo lenguajes de etiquetado y estilo (HTML5 y CSS3), y nivel intermedio de Javascrip y React js</p>
+            </div>
+            <table>
+                <tr>
+                    <th>- HTML5</th>
+                    <th>- CSS3</th>
+                </tr>
+                <tr>
+                    <td><img src="img/html.png" alt="Html5"></td>
+                    <td><img src="img/css.png" alt="Css3" class="css"></td>
+                </tr>
+                <tr>
+                    <th>- Javascrip</th>
+                    <th>- React</th>
+                </tr>
+                <tr>
+                    <td><img src="img/js.png" alt="Js" class="js"></td>
+                    <td><img src="img/react.png" alt="React"></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- PROYECTS -->
+        <section class="proyects" id="proyects">
+            <h1>Proyectos</h1>
+            <div class="proyects-caja"></div>
+        </section>
+
+      </main>
+
+
+    <!-- INICIO DEL FOOTER -->
+       <footer>
+        <h1>Contacto</h1>
+        <section class="contact" id="contact">
+            <form id="contactForm" action="/send-email" method="POST">
+                <div class="contact-info">
+                    <div>
+                        <label for="">Nombre</label> 
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre" required> 
+                    </div>
+                    <div> 
+                        <label for="">Apellido</label> 
+                        <input type="text" name="apellido" placeholder="Ingrese su apellido" required> 
+                    </div>
+                </div>
+
+                <div class="contact-info2">
+                    <label for="">Gmail</label> <br>
+                    <input type="email" name="email" placeholder="Ingrese su email">
+                </div>
+
+                <div class="contact-info3">
+                    <label for="">Mensaje</label> <br>
+                    <textarea name="mensaje" placeholder="Ingrese mensaje"></textarea>
+                </div>  
+                <div class="contact-boton">
+                    <button type="submit">Enviar</button>        
+                </div>
+                
+            </form>
+        </section>
+       </footer>
+    
+    <!-- JS -->
+    <script src="./Js/index.js"></script>
+    <script src="./Js/proyectos.js" defer></script>
+</body>
+</html>
