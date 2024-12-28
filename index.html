@@ -11,7 +11,15 @@
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <!-- script form -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init('LYssx_RlQ23JTQYQd'); // Reemplaza TU_USER_ID con tu ID de usuario de EmailJS
+    </script>
 </head>
+
 <body>
     <!-- INICIO DEL HEADER -->
      <header>
@@ -148,7 +156,7 @@
        <footer>
         <h1>Contacto</h1>
         <section class="contact" id="contact">
-            <form id="contactForm" action="/send-email" method="POST">
+            <form id="contactForm" action="" method="POST">
                 <div class="contact-info">
                     <div>
                         <label for="">Nombre</label> 
